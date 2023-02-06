@@ -12,5 +12,29 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous" />
   </head>
-  <body></body>
+  <body>
+    <h1 class="text-center mt-3 mb-5">Bad words</h1>
+    <div class="container">
+      <form action="paragraph_page.php" class="w-75 mx-auto">
+        <input
+          class="form-control mb-3"
+          type="text"
+          name="censored-word"
+          placeholder="Inserisci una parola da censurare"
+          required />
+        <div class="mb-3">
+          <label for="paragraph" class="form-label"
+            >Inserisci un testo da censurare</label
+          >
+          <textarea
+            class="form-control"
+            name="paragraph"
+            id="paragraph"
+            rows="3"
+            required></textarea>
+        </div>
+        <button class="btn btn-success">Invia</button>
+      </form>
+    </div>
+  </body>
 </html>

@@ -1,5 +1,5 @@
 <?php 
-$word = trim($_GET['censored-word']);
+$word = strtolower(trim($_GET['censored-word']));
 $words = [$word, ucfirst($word)];
 $paragraph = trim($_GET['paragraph']);
 $paragraph_length = strlen($paragraph);
